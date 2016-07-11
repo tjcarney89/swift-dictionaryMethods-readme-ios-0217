@@ -45,7 +45,7 @@ Here, the key "The Fast and the Furious" already exists, and you're assigning it
 
 On the surface, this still doesn't look much different than assigning a value to a key. So what's the difference?
 
-The main difference is that `updateValue(_:forKey:)` has a return value that tells you whether a key was added or updated. The return type is an optional, so it can be `nil`. If a new key/value pair was _added_, the return value is `nil`. If an existing key/value pair was _updated_, the return value of `updateValue(_:forKey:)` is the key's _new_ value, wrapped in an `Optional`.
+The main difference is that `updateValue(_:forKey:)` has a return value that tells you whether a key was added or updated. The return type is an optional, so it can be `nil`. If a new key/value pair was _added_, the return value is `nil`. If an existing key/value pair was _updated_, the return value of `updateValue(_:forKey:)` is the key's _old_ value, wrapped in an `Optional`.
 
 Take a look at this code:
 
@@ -56,7 +56,7 @@ print(result1)
 print(result2)
 ```
 
-Can you guess what is printed to the console? Think about it: `updateValue(_:forKey:)` returns `nil` if a new key/value pair is added, and the new value if a key is updated instead. "The Godfather" did not exist in the dictionary before, but "The Fast and the Furious" did. What appears in your console?
+Can you guess what is printed to the console? Think about it: `updateValue(_:forKey:)` returns `nil` if a new key/value pair is added, and the old value if a key is updated instead. "The Godfather" did not exist in the dictionary before, but "The Fast and the Furious" did. What appears in your console?
 
 You should see this:
 
@@ -313,3 +313,5 @@ Just like with keys, values are not returned in any particular order. (Dictionar
 That covers the fundamental operations you can perform on dictionaries. As you work with Swift, you'll encounter many more, but these basic operations are the ones you'll see and use the most.
 
 <a href='https://learn.co/lessons/DictionaryMethods' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-dictionaryMethods-readme'>Dictionary Methods </a> on Learn.co and start learning to code for free.</p>
