@@ -4,20 +4,20 @@
 
 > The most exciting phrase to hear in science, the one that heralds the most discoveries, is not "Eureka!" (I found it!) but 'That's funny...'
 
-## Learning Objectives - The student should be able to...
+## Learning Objectives 
 
-* Update values within a dictionary using subscript syntax and `updateValue(_:forKey:)`.
-* Understand that by accessing something within a dictionary using a key, you are getting back a value, but it's an optional value which requires you to unwrap it.
-* Access a value with a given key, update that value and reflect that update (change) back to the dictionary.
-* Remove a key/value pair by assigning the value to `nil`.
-* Remove a key/value pair using the method `removeValueForKey()`.
-* Explain that by using `.count`, you will retrieve the total number of key/value pairs within the dictionary.
-* Explain that `.isEmpty` is a way to see if in fact the dictionary is empty, in that it returns a `Bool`.
-* What `.keys` and `.values` does and how you can iterate over what this returns.
+* Update values within a dictionary using subscript syntax and `updateValue(_:forKey:)`
+* Recognie the return value of accessing a dictionary using a key
+* Access a value with a given key, update that value and reflect that update (change) back to the dictionary
+* Remove a key/value pair by assigning the value to `nil`
+* Remove a key/value pair using the method `removeValueForKey()`
+* Explain that by using `.count`, you will retrieve the total number of key/value pairs within the dictionary
+* USE `.isEmpty` is a way to determine whether a dictionary is empty
+* Use `.keys` and `.values` to retrieve keys and values from dictionaries 
 
 ## Working With Dictionaries
 
-So far, you've learned about a few basic operations you can perform on or with dictionaries. You learned how to create a dictionary, how to add items to a dictionary, how to remove items from a dictionary, and how to iterate over it. In this lesson, you'll learn about a few of the _methods_ you can use to work with dictionaries even more effectively.
+You know how to create a dictionary, add items to and remove items from it, and iterate over it. In this lesson, you'll learn about a few of the _methods_ you can use to work with dictionaries even more effectively.
 
 The playground file included in this repo has some examples to look over as you work through this lesson. They will demonstrate the use of several different methods available to dictionaries. Once again, you are working with a dictionary to store information about movie franchises. An initial dictionary with this information, `movies`, has been created for you in the playground.
 
