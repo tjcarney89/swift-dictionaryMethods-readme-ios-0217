@@ -7,7 +7,7 @@
 ## Learning Objectives 
 
 * Update values within a dictionary using subscript syntax and `updateValue(_:forKey:)`
-* Recognie the return value of accessing a dictionary using a key
+* Recognize the return value of accessing a dictionary using a key
 * Access a value with a given key, update that value and reflect that update (change) back to the dictionary
 * Remove a key/value pair by assigning the value to `nil`
 * Remove a key/value pair using the method `removeValueForKey()`
@@ -313,3 +313,5 @@ Just like with keys, values are not returned in any particular order. (Dictionar
 That covers the fundamental operations you can perform on dictionaries. As you work with Swift, you'll encounter many more, but these basic operations are the ones you'll see and use the most.
 
 <a href='https://learn.co/lessons/DictionaryMethods' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-dictionaryMethods-readme'>Dictionary Methods </a> on Learn.co and start learning to code for free.</p>
