@@ -7,7 +7,7 @@
 ## Learning Objectives 
 
 * Update values within a dictionary using subscript syntax and `updateValue(_:forKey:)`
-* Recognie the return value of accessing a dictionary using a key
+* Recognize the return value of accessing a dictionary using a key
 * Access a value with a given key, update that value and reflect that update (change) back to the dictionary
 * Remove a key/value pair by assigning the value to `nil`
 * Remove a key/value pair using the method `removeValueForKey()`
