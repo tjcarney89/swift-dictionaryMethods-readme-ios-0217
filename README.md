@@ -12,7 +12,7 @@
 * Remove a key/value pair by assigning the value to `nil`
 * Remove a key/value pair using the method `removeValueForKey()`
 * Explain that by using `.count`, you will retrieve the total number of key/value pairs within the dictionary
-* USE `.isEmpty` is a way to determine whether a dictionary is empty
+* Use `.isEmpty` is a way to determine whether a dictionary is empty
 * Use `.keys` and `.values` to retrieve keys and values from dictionaries 
 
 ## Working With Dictionaries
@@ -313,3 +313,5 @@ Just like with keys, values are not returned in any particular order. (Dictionar
 That covers the fundamental operations you can perform on dictionaries. As you work with Swift, you'll encounter many more, but these basic operations are the ones you'll see and use the most.
 
 <a href='https://learn.co/lessons/DictionaryMethods' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-dictionaryMethods-readme'>Dictionary Methods </a> on Learn.co and start learning to code for free.</p>
