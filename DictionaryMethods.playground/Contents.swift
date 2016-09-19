@@ -44,6 +44,8 @@ let godfatherFilms = [
     "The Godfather Part III"
 ]
 
+let name: String? = "Jimbo"
+
 
 // UPDATING KEYS
 
@@ -72,7 +74,7 @@ if var films = movies["The Fast and the Furious"] {
 }
 
 if let fastMovies = movies["The Fast and the Furious"] {
-    for (index, film) in fastMovies.enumerate() {
+    for (index, film) in fastMovies.enumerated() {
         print("\(index + 1). \(film)")
     }
 }
@@ -89,7 +91,7 @@ if let fast3rFilms = movies["The Fast and the Furious"] {
     print("YAY! no more Fast & Furious movies!")
 }
 
-movies.removeValueForKey("The Fast and the Furious")
+movies.removeValue(forKey: "The Fast and the Furious")
 
 
 

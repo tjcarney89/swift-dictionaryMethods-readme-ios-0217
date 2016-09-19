@@ -1,8 +1,8 @@
 # Dictionary Methods
 
-![Drawing](http://d.gr-assets.com/authors/1341965730p5/16667.jpg)
+![Drawing](http://i.imgur.com/cy2CY2W.jpg?1)
 
-> The most exciting phrase to hear in science, the one that heralds the most discoveries, is not "Eureka!" (I found it!) but 'That's funny...'
+> The most exciting phrase to hear in science, the one that heralds the most discoveries, is not "Eureka!" (I found it!) but 'That's funny...' - [Isaac Asimov](https://en.wikipedia.org/wiki/Isaac_Asimov)
 
 ## Learning Objectives 
 
@@ -10,12 +10,14 @@
 * Recognize the return value of accessing a dictionary using a key
 * Access a value with a given key, update that value and reflect that update (change) back to the dictionary
 * Remove a key/value pair by assigning the value to `nil`
-* Remove a key/value pair using the method `removeValueForKey()`
+* Remove a key/value pair using the method `removeValue(forKey:)`
 * Explain that by using `.count`, you will retrieve the total number of key/value pairs within the dictionary
 * Use `.isEmpty` is a way to determine whether a dictionary is empty
 * Use `.keys` and `.values` to retrieve keys and values from dictionaries 
 
 ## Working With Dictionaries
+
+**NOTE**: This is not a lab. It's a reading (which might ask you to code-along at times, if you like.) There's a playground file included which has all of the code listed below, feel free to reference that as you read along or.. start your own playground file and code-along as you go through the reading.
 
 You know how to create a dictionary, add items to and remove items from it, and iterate over it. In this lesson, you'll learn about a few of the _methods_ you can use to work with dictionaries even more effectively.
 
@@ -138,7 +140,7 @@ You can confirm that you added those two titles by printing out the dictionary:
 
 ```swift
 if let fastMovies = movies["The Fast and the Furious"] {
-    for (index, film) in fastMovies.enumerate() {
+    for (index, film) in fastMovies.enumerated() {
         print("\(index + 1). \(film)")
     }
 }
@@ -179,15 +181,15 @@ if let fast3rFilms = movies["The Fast and the Furious"] {
 
 Pretty easy, right?
 
-Remember the `updateValue(_:forKey:)` method, though? There is a corresponding `Dictionary` method called `removeValueForKey()`. You can also remove a key using that method:
+Remember the `updateValue(_:forKey:)` method, though? There is a corresponding `Dictionary` method called `removeValue(forKey:)`. You can also remove a key using that method:
 
 ```swift
-movies.removeValueForKey("The Fast and the Furious")
+movies.removeValue(forKey: "The Fast and the Furious")
 ```
 
-`removeValueForKey()` serves a similar purpose as `updateValue(_:forKey:)`. If the key _exists_ in the dictionary, `removeValueForKey()` deletes it, and returns its value wrapped in an `Optional`. If the key does _not_ exist in the dictionary, then `removeValueForKey()` returns `nil`. Therefore, this method serves two purposes: It removes a key from the dictionary _and_ lets you know whether it existed in the dictionary or not.
+`removeValue(forKey:)` serves a similar purpose as `updateValue(_:forKey:)`. If the key _exists_ in the dictionary, `removeValue(forKey:)` deletes it, and returns its value wrapped in an `Optional`. If the key does _not_ exist in the dictionary, then `removeValue(forKey:)` returns `nil`. Therefore, this method serves two purposes: It removes a key from the dictionary _and_ lets you know whether it existed in the dictionary or not.
 
-In most cases, it's easier to remove a key simply by assigning `nil` to it, and you'll use that method much more often. But `removeValueForKey()` is sometimes useful when you want to know if a key existed or not.
+In most cases, it's easier to remove a key simply by assigning `nil` to it, and you'll use that method much more often. But `removeValue(forKey:)` is sometimes useful when you want to know if a key existed or not.
 
 ### Counting Items
 
