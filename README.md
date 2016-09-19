@@ -47,7 +47,7 @@ Here, the key "The Fast and the Furious" already exists, and you're assigning it
 
 On the surface, this still doesn't look much different than assigning a value to a key. So what's the difference?
 
-The main difference is that `updateValue(_:forKey:)` has a return value that tells you whether a key was added or updated. The return type is an optional, so it can be `nil`. If a new key/value pair was _added_, the return value is `nil`. If an existing key/value pair was _updated_, the return value of `updateValue(_:forKey:)` is the key's _new_ value, wrapped in an `Optional`.
+The main difference is that `updateValue(_:forKey:)` has a return value that tells you whether a key was added or updated. The return type is an optional, so it can be `nil`. If a new key/value pair was _added_, the return value is `nil`. If an existing key/value pair was _updated_, the return value of `updateValue(_:forKey:)` is the key's _old_ value, wrapped in an `Optional`.
 
 Take a look at this code:
 
@@ -58,7 +58,7 @@ print(result1)
 print(result2)
 ```
 
-Can you guess what is printed to the console? Think about it: `updateValue(_:forKey:)` returns `nil` if a new key/value pair is added, and the new value if a key is updated instead. "The Godfather" did not exist in the dictionary before, but "The Fast and the Furious" did. What appears in your console?
+Can you guess what is printed to the console? Think about it: `updateValue(_:forKey:)` returns `nil` if a new key/value pair is added, and the old value if a key is updated instead. "The Godfather" did not exist in the dictionary before, but "The Fast and the Furious" did. What appears in your console?
 
 You should see this:
 
