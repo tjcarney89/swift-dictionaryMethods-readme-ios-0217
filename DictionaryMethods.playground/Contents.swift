@@ -127,7 +127,7 @@ if planetsAndTheirMoons.isEmpty {
 
 var emptyDictionary = [String: String]()
 if emptyDictionary.isEmpty {
-    print("Ah hah! It's empty.")
+    print("Ah hah! It's empty!")
 } else {
     print("There's something here...")
 }
